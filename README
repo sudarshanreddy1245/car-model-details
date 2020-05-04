@@ -9,23 +9,36 @@ API's :
 -----
 implemented api's to support CURD operation.
 1. save (admin role can perform this action).
+	HttpMethod : POST
+	URL: http://localhost:8080/car
 2. Update(admin role can perform this action).
+	HttpMethod : PUT
+	URL: http://localhost:8080/car
 3. Get car details based on id (admin and user role can perform this action).
+	HttpMethod : GET
+	URL: http://localhost:8080/car/1
 4. Get all the car details (admin and user role can perform this action).
+	HttpMethod : GET
+	URL: http://localhost:8080/car
 5. Delete user based on id (admin role can perform this action).
+	HttpMethod : DELETE
+	URL: http://localhost:8080/car/1
 6. Search operation based name, manufacture name, manufacturing year, model, color, Operator type user can select and/or based on that filter data will display to the end user (admin and user role can perform this action)
-
+	HttpMethod : GET
+	URL: http://localhost:8080/car/search
+	
 Exception Handling:
 ---------------------
 Spring exception handling provided centralized exception handling.
 
 Swagger:
 --------
-API documentation purpose designed and perform all the api's through the swagger.
+API documentation purpose designed and perform all the api's through the swagger also.
+	Swagger URL : http://localhost:8080/swagger-ui.html
 
 Logging:
 -------
-Use the sl4j log the error messages.
+Use the slf4j log the error messages.
 
 Testing:
 ----------
