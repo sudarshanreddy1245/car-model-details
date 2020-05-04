@@ -17,7 +17,7 @@ implemented api's to support CURD operation.
 
 Exception Handling:
 ---------------------
-Handled the centralized exception handling.
+Spring exception handling provided centralized exception handling.
 
 Swagger:
 --------
@@ -30,3 +30,7 @@ Use the sl4j log the error messages.
 Testing:
 ----------
 Junits'returned for the respective api's in the test folder.
+
+sql files:
+----------
+Added schema and some data in the sql files.
