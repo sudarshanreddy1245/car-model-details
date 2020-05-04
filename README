@@ -1,0 +1,32 @@
+Security: 
+--------
+Login the application use below credentials.
+
+user name: admin@gmail.com password: password Role: admin
+user name: user@gmail.com password: password Role: user (view permissions)
+
+API's : 
+-----
+implemented api's to support CURD operation.
+1. save (admin role can perform this action).
+2. Update(admin role can perform this action).
+3. Get car details based on id (admin and user role can perform this action).
+4. Get all the car details (admin and user role can perform this action).
+5. Delete user based on id (admin role can perform this action).
+6. Search operation based name, manufacture name, manufacturing year, model, color, Operator type user can select and/or based on that filter data will display to the end user (admin and user role can perform this action)
+
+Exception Handling:
+---------------------
+Handled the centralized exception handling.
+
+Swagger:
+--------
+API documentation purpose designed and perform all the api's through the swagger.
+
+Logging:
+-------
+Use the sl4j log the error messages.
+
+Testing:
+----------
+Junits'returned for the respective api's in the test folder.

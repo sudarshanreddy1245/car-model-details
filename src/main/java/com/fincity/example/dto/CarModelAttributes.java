@@ -2,17 +2,17 @@ package com.fincity.example.dto;
 
 public class CarModelAttributes {
 	
-	private OperatorType operatorType;
+	private Operator operator;
 	private String name;
 	private String manufactureName;
 	private String model;
 	private String manufacturingYear;
 	private String color;
-	public OperatorType getOperatorType() {
-		return operatorType;
+	public Operator getOperator() {
+		return operator;
 	}
-	public void setOperatorType(OperatorType operatorType) {
-		this.operatorType = operatorType;
+	public void setOperatorType(Operator operator) {
+		this.operator = operator;
 	}
 	public String getName() {
 		return name;

@@ -1,6 +1,6 @@
 package com.fincity.example.dto;
 
-public enum OperatorType {
+public enum Operator {
 	
 	AND("and"),
 	OR("or");
@@ -8,7 +8,7 @@ public enum OperatorType {
 	private String type;
 	
 	
-	private OperatorType(final String type) {
+	private Operator(final String type) {
 		this.type = type;
 	}
 
@@ -17,8 +17,8 @@ public enum OperatorType {
 		return type;
 	}
 	
-	public static OperatorType getOperatorByType(OperatorType type) {
-		for( OperatorType operatorType : values()) {
+	public static Operator getOperatorByType(Operator type) {
+		for( Operator operatorType : values()) {
 			if (type == operatorType) {
 				return type;
 			}

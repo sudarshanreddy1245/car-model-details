@@ -8,7 +8,7 @@ import javax.persistence.criteria.Predicate;
 import org.springframework.data.jpa.domain.Specification;
 
 import com.fincity.example.dto.CarModelAttributes;
-import com.fincity.example.dto.OperatorType;
+import com.fincity.example.dto.Operator;
 import com.fincity.example.model.CarEntity;
 
 public class CarSpecification {
@@ -37,7 +37,7 @@ public class CarSpecification {
                     predicates.add(CriteriaBuilder.equal(root.get("color"), car.getColor()));
                 }
             }
-            if (car.getOperatorType() != null && car.getOperatorType() == OperatorType.AND)
+            if (car.getOperator() != null && car.getOperator() == Operator.AND)
             	return CriteriaBuilder.and(predicates.stream().toArray(Predicate[]::new));
             else
             	return CriteriaBuilder.or(predicates.stream().toArray(Predicate[]::new));
